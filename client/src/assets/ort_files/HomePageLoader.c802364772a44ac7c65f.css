@@ -1,0 +1,1753 @@
+/* media queries */
+/* lib/constants/sizes */
+/* layout */
+/* spacing */
+/* misc */
+/* body font sizes */
+/* heading font sizes */
+/* font family */
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+/* Purples - lightest to darkest */
+/* Blues - lightest to darkest */
+/* Greens - lightest to darkest */
+/* Reds - lightest to darkest */
+/* Yellows - lightest to darkest */
+/* Grays - lightest to darkest */
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+/* -base background colors */
+/* lib/constants/variants */
+/* CTA component colors */
+/* cohesion font colors */
+/* State Colors */
+/* -- These use colors not found in the styleguide -- */
+/* - end -- */
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+/* button */
+/* select */
+/* input */
+/* stylelint-disable value-list-comma-newline-after */
+/* box-shadow for store cards */
+/* component: tab */
+/* Nautilus colors */
+/* Publish flow */
+/* Public Profile */
+/* v2 */
+/* Sign up form width */
+/* https://goo.gl/Mus6xj */
+/* Font sizes */
+/* columns */
+/* Three equal columns */
+/* Rows */
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+@-webkit-keyframes styles__fadein___1uFK5 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes styles__fadein___1uFK5 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+/* hide the ALT text in certain browsers (firefox) */
+.styles__hideAltText___IyemE {
+  color: transparent;
+}
+/*
+ * Make sure there is no flash between when the image calls onLoad() and the
+ * loaded styles are applied
+ */
+.styles__hideFadeInFlash___29bQM {
+  opacity: 0;
+}
+.styles__fadeInImage___dfisB {
+  -webkit-animation: styles__fadein___1uFK5 0.6s;
+          animation: styles__fadein___1uFK5 0.6s;
+}
+@keyframes styles__fadein___1uFK5 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* media queries */
+/* lib/constants/sizes */
+/* layout */
+/* spacing */
+/* misc */
+/* body font sizes */
+/* heading font sizes */
+/* font family */
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+/* Purples - lightest to darkest */
+/* Blues - lightest to darkest */
+/* Greens - lightest to darkest */
+/* Reds - lightest to darkest */
+/* Yellows - lightest to darkest */
+/* Grays - lightest to darkest */
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+/* -base background colors */
+/* lib/constants/variants */
+/* CTA component colors */
+/* cohesion font colors */
+/* State Colors */
+/* -- These use colors not found in the styleguide -- */
+/* - end -- */
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+/* button */
+/* select */
+/* input */
+/* stylelint-disable value-list-comma-newline-after */
+/* box-shadow for store cards */
+/* component: tab */
+/* Nautilus colors */
+/* Publish flow */
+/* Public Profile */
+/* v2 */
+/* Sign up form width */
+/* https://goo.gl/Mus6xj */
+/* Font sizes */
+/* columns */
+/* Three equal columns */
+/* Rows */
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+@-webkit-keyframes styles__fadein___2AKCp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes styles__fadein___2AKCp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+.styles__cardWrapper___x_xbl {
+  display: inline-block;
+  padding: 16px 8px 12px 16px;
+  cursor: pointer;
+  height: 95px;
+  overflow: hidden;
+  text-decoration: none;
+  border-color: #ffffff;
+  -webkit-box-shadow: 0 1px 2px 0 #c2c2c2;
+          box-shadow: 0 1px 2px 0 #c2c2c2;
+  background: #ffffff;
+}
+.styles__cardWrapper___x_xbl .styles__cardContent___2b1dC {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+.styles__cardWrapper___x_xbl .styles__cardContent___2b1dC .styles__logo___u07_F {
+      max-width: 40px;
+      max-height: 40px;
+      margin-right: 12px;
+    }
+.styles__cardWrapper___x_xbl .styles__cardContent___2b1dC .styles__cardText___2oAJA {
+      height: 65px;
+      overflow: hidden;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+    }
+.styles__cardWrapper___x_xbl .styles__cardContent___2b1dC .styles__cardText___2oAJA .styles__name___2y5Lc {
+        font-size: 14px;
+        line-height: 20px;
+        color: #27343b;
+        font-weight: 600;
+      }
+.styles__cardWrapper___x_xbl .styles__cardContent___2b1dC .styles__cardText___2oAJA .styles__publisher___sOp2O {
+        font-size: 12px;
+        line-height: 16px;
+        color: #27343b;
+        line-height: 17px;
+        word-break: break-word;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+.styles__cardWrapper___x_xbl .styles__cardContent___2b1dC .styles__cardText___2oAJA .styles__pullCount___X53ma {
+        font-size: 12px;
+        line-height: 16px;
+        color: #27343b;
+      }
+.styles__cardWrapper___x_xbl .styles__cardContent___2b1dC .styles__cardText___2oAJA .styles__pullCount___X53ma svg {
+          margin: 0 8px 0 0;
+        }
+.styles__cardWrapper___x_xbl:hover {
+  -webkit-box-shadow: 0 1px 6px 0 #c0c0c0;
+          box-shadow: 0 1px 6px 0 #c0c0c0;
+}
+.styles__featured___p5mvR {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0
+}
+.styles__featured___p5mvR:hover {
+  -webkit-box-shadow: 0 1px 2px 0 #c2c2c2;
+          box-shadow: 0 1px 2px 0 #c2c2c2;
+}
+.styles__fallbackElement___WRvOn {
+  width: 40px;
+  height: 40px;
+}
+.styles__fallbackElement___WRvOn {
+  margin-right: 12px;
+  fill: #8f9ea8;
+  border-radius: 8px;
+}
+
+/* media queries */
+/* lib/constants/sizes */
+/* layout */
+/* spacing */
+/* misc */
+/* body font sizes */
+/* heading font sizes */
+/* font family */
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+/* Purples - lightest to darkest */
+/* Blues - lightest to darkest */
+/* Greens - lightest to darkest */
+/* Reds - lightest to darkest */
+/* Yellows - lightest to darkest */
+/* Grays - lightest to darkest */
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+/* -base background colors */
+/* lib/constants/variants */
+/* CTA component colors */
+/* cohesion font colors */
+/* State Colors */
+/* -- These use colors not found in the styleguide -- */
+/* - end -- */
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+/* button */
+/* select */
+/* input */
+/* stylelint-disable value-list-comma-newline-after */
+/* box-shadow for store cards */
+/* component: tab */
+/* Nautilus colors */
+/* Publish flow */
+/* Public Profile */
+/* v2 */
+/* Sign up form width */
+/* https://goo.gl/Mus6xj */
+/* Font sizes */
+/* columns */
+/* Three equal columns */
+/* Rows */
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+@-webkit-keyframes styles__fadein___2QLO6 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes styles__fadein___2QLO6 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+.styles__content___2OTL6 {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.styles__title___BqrgZ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 32px;
+}
+.styles__title___BqrgZ .styles__subtitle___1fiNx {
+    font-size: 12px;
+    line-height: 16px;
+    color: #27343b;
+    color: #70787d;
+  }
+.styles__link___3QK8U {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.styles__link___3QK8U a {
+    font-size: 12px;
+    line-height: 16px;
+    color: #27343b;
+    text-decoration: none;
+    font-weight: bold;
+    color: #309cee;
+  }
+@media only screen and (min-width: 601px) {
+    .styles__grid5___2S2Ei a {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: calc(19.98% - 20px);
+      max-width: calc(19.98% - 20px);
+      width: calc(19.98% - 20px);
+      margin-bottom: 24px;
+    }
+    .styles__grid5___2S2Ei a:nth-child(1n) {
+      margin-right: 25px;
+      margin-left: 0;
+    }
+    .styles__grid5___2S2Ei a:last-child {
+      margin-right: 0;
+    }
+    .styles__grid5___2S2Ei a:nth-child(5n) {
+      margin-right: 0;
+      margin-left: auto;
+    }
+    .styles__grid4___2J1MY a {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: calc(24.975% - 9px);
+      max-width: calc(24.975% - 9px);
+      width: calc(24.975% - 9px);
+      margin-bottom: 24px;
+    }
+    .styles__grid4___2J1MY a:nth-child(1n) {
+      margin-right: 12px;
+      margin-left: 0;
+    }
+    .styles__grid4___2J1MY a:last-child {
+      margin-right: 0;
+    }
+    .styles__grid4___2J1MY a:nth-child(4n) {
+      margin-right: 0;
+      margin-left: auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .styles__grid5___2S2Ei a {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: calc(49.95% - 6px);
+      max-width: calc(49.95% - 6px);
+      width: calc(49.95% - 6px);
+      margin-bottom: 12px;
+    }
+    .styles__grid5___2S2Ei a:nth-child(1n) {
+      margin-right: 12px;
+      margin-left: 0;
+    }
+    .styles__grid5___2S2Ei a:last-child {
+      margin-right: 0;
+    }
+    .styles__grid5___2S2Ei a:nth-child(2n) {
+      margin-right: 0;
+      margin-left: auto;
+    }
+    .styles__grid4___2J1MY a {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: calc(49.95% - 6px);
+      max-width: calc(49.95% - 6px);
+      width: calc(49.95% - 6px);
+      margin-bottom: 12px;
+    }
+    .styles__grid4___2J1MY a:nth-child(1n) {
+      margin-right: 12px;
+      margin-left: 0;
+    }
+    .styles__grid4___2J1MY a:last-child {
+      margin-right: 0;
+    }
+    .styles__grid4___2J1MY a:nth-child(2n) {
+      margin-right: 0;
+      margin-left: auto;
+    }
+}
+.styles__loading___21-Sr {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* media queries */
+/* lib/constants/sizes */
+/* layout */
+/* spacing */
+/* misc */
+/* body font sizes */
+/* heading font sizes */
+/* font family */
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+/* Purples - lightest to darkest */
+/* Blues - lightest to darkest */
+/* Greens - lightest to darkest */
+/* Reds - lightest to darkest */
+/* Yellows - lightest to darkest */
+/* Grays - lightest to darkest */
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+/* -base background colors */
+/* lib/constants/variants */
+/* CTA component colors */
+/* cohesion font colors */
+/* State Colors */
+/* -- These use colors not found in the styleguide -- */
+/* - end -- */
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+/* button */
+/* select */
+/* input */
+/* stylelint-disable value-list-comma-newline-after */
+/* box-shadow for store cards */
+/* component: tab */
+/* Nautilus colors */
+/* Publish flow */
+/* Public Profile */
+/* v2 */
+/* Sign up form width */
+/* https://goo.gl/Mus6xj */
+/* Font sizes */
+/* columns */
+/* Three equal columns */
+/* Rows */
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+@-webkit-keyframes styles__fadein___32k9J {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes styles__fadein___32k9J {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+.styles__contentPane___2MTWA {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.styles__contentPane___2MTWA:before {
+  content: '';
+  display: table;
+}
+.styles__contentPane___2MTWA:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.styles__content___r_SrX {
+  width: calc(49.95% - 8px);
+}
+.styles__content___r_SrX:nth-child(1n) {
+  float: left;
+  margin-right: 16px;
+  clear: none;
+}
+.styles__content___r_SrX:last-child {
+  margin-right: 0;
+}
+.styles__content___r_SrX:nth-child(2n) {
+  margin-right: 0;
+  float: right;
+}
+.styles__content___r_SrX:nth-child(2n + 1) {
+  clear: both;
+}
+@media only screen and (max-width: 600px) {
+  .styles__content___r_SrX {
+    width: 99.9%;
+  }
+  .styles__content___r_SrX:nth-child(1n) {
+    float: left;
+    margin-right: 12px;
+    clear: none;
+  }
+  .styles__content___r_SrX:last-child {
+    margin-right: 0;
+  }
+  .styles__content___r_SrX:nth-child(1n) {
+    margin-right: 0;
+    float: right;
+  }
+  .styles__content___r_SrX:nth-child(1n + 1) {
+    clear: both;
+  }
+}
+.styles__title___UPMfG {
+  font-size: 38px;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 16px;
+  margin: 0;
+}
+.styles__description___1BFcn {
+  font-size: 16px;
+  color: #70787d;
+  padding-bottom: 16px;
+}
+.styles__checkIcon___MQNjG {
+  fill: #099cec;
+  margin-top: 12px;
+  margin-right: 12px;
+  position: relative;
+  top: 4px;
+}
+.styles__multiLineCheckIcon___3nlEP {
+  fill: #099cec;
+  margin-right: 12px;
+  position: relative;
+  float: left;
+  bottom: 4px;
+}
+.styles__cta___1IU3s {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.styles__cta___1IU3s button {
+    padding: 8px 16px;
+    border-radius: 3px;
+  }
+.styles__imgContent___1ppJo {
+  text-align: center;
+}
+.styles__imgContent___1ppJo img {
+    width: 320px;
+    margin-top: 40px;
+    margin-bottom: -40px;
+  }
+.styles__certifiedDescription___248FP {
+  margin-top: 20px;
+}
+
+/* media queries */
+/* lib/constants/sizes */
+/* layout */
+/* spacing */
+/* misc */
+/* body font sizes */
+/* heading font sizes */
+/* font family */
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+/* Purples - lightest to darkest */
+/* Blues - lightest to darkest */
+/* Greens - lightest to darkest */
+/* Reds - lightest to darkest */
+/* Yellows - lightest to darkest */
+/* Grays - lightest to darkest */
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+/* -base background colors */
+/* lib/constants/variants */
+/* CTA component colors */
+/* cohesion font colors */
+/* State Colors */
+/* -- These use colors not found in the styleguide -- */
+/* - end -- */
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+/* button */
+/* select */
+/* input */
+/* stylelint-disable value-list-comma-newline-after */
+/* box-shadow for store cards */
+/* component: tab */
+/* Nautilus colors */
+/* Publish flow */
+/* Public Profile */
+/* v2 */
+/* Sign up form width */
+/* https://goo.gl/Mus6xj */
+/* Font sizes */
+/* columns */
+/* Three equal columns */
+/* Rows */
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+@-webkit-keyframes styles__fadein___3D7dk {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes styles__fadein___3D7dk {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+.styles__topSection___Hm7vt {
+  height: 750px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.styles__topSection___Hm7vt .styles__title___1Tj-O {
+    padding-top: 160px;
+    max-width: 486px;
+    color: #ffffff;
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 46px;
+  }
+.styles__topSection___Hm7vt .styles__title___1Tj-O .styles__subtitle___3fla- {
+      font-size: 14px;
+      line-height: 20px;
+      color: #27343b;
+      font-weight: 600;
+      color: #ffffff;
+      font-weight: bold;
+      max-width: 400px;
+      margin-top: 28px;
+    }
+.styles__topSection___Hm7vt .styles__cta___3NoUc button {
+      margin: 0;
+      margin-right: 32px;
+      line-height: 45px;
+      padding: 0 24px;
+    }
+.styles__topSection___Hm7vt .styles__cta___3NoUc a {
+      color: #ffffff;
+      font-weight: bold;
+    }
+.styles__welcomeBox___5mYOc {
+  width: 100%;
+  background: linear-gradient(116.41deg, #099cec 32.82%, #6bc3f3 93.88%);
+  -webkit-box-shadow: 0 1px 2px #c2c2c2;
+          box-shadow: 0 1px 2px #c2c2c2;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  padding: 32px;
+}
+.styles__welcomeBox___5mYOc .styles__tutorialButton___1iOSx {
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+.styles__welcomeBox___5mYOc .styles__tutorialButton___1iOSx button {
+      width: 300px;
+    }
+.styles__headline___3KoOn {
+  padding-bottom: 7px;
+  font-size: 34px;
+  font-weight: 600;
+}
+.styles__subheadline___OTcBc {
+  font-size: 44px;
+  line-height: 46px;
+  padding-bottom: 20px;
+}
+.styles__welcomeDescription___3FT-C {
+  font-size: 12px;
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+.styles__description___3u4Lq {
+  color: #70787d;
+}
+.styles__middleSection___7WYQl {
+  margin: 55px 0;
+  text-align: center;
+}
+.styles__bottomSection___3iUl7 {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin-top: -100px;
+  padding-top: 100px;
+}
+.styles__bottomSection___3iUl7 .styles__repoSection___2E4Nh {
+    max-width: 960px;
+  }
+@media only screen and (min-width: 601px) {
+  .styles__bottomSection___3iUl7 .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS {
+        height: 550px;
+        width: calc(33.3% - 32px);
+  }
+  .styles__bottomSection___3iUl7 .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS:nth-child(1n) {
+        float: left;
+        margin-right: 48px;
+        clear: none;
+  }
+  .styles__bottomSection___3iUl7 .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS:last-child {
+        margin-right: 0;
+  }
+  .styles__bottomSection___3iUl7 .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS:nth-child(3n) {
+        margin-right: 0;
+        float: right;
+  }
+  .styles__bottomSection___3iUl7 .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS:nth-child(3n + 1) {
+        clear: both;
+  }
+}
+.styles__welcomeRepoSection___aPOr0 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.styles__welcomeRepoSection___aPOr0 .styles__welcomeRepoGrid___-UsKC {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+.styles__welcomeRepoSection___aPOr0 .styles__welcomeRepoGrid___-UsKC .styles__welcomeCard___24QAz {
+      width: 49.5%;
+      height: 150px;
+      -webkit-box-shadow: 0 1px 2px #c2c2c2;
+              box-shadow: 0 1px 2px #c2c2c2;
+    }
+.styles__welcomeRepoSection___aPOr0 .styles__welcomeRepoGrid___-UsKC .styles__welcomeCard___24QAz a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
+.styles__welcomeRepoSection___aPOr0 .styles__welcomeRepoGrid___-UsKC .styles__welcomeCard___24QAz a img {
+          width: 68px;
+          height: 103px;
+        }
+.styles__welcomeRepoSection___aPOr0 .styles__welcomeRepoGrid___-UsKC .styles__welcomeCard___24QAz a header {
+          font-size: 18px;
+          font-weight: 600;
+          width: 400px;
+          height: 100px;
+          margin-left: 50px;
+        }
+.styles__welcomeRepoSection___aPOr0 .styles__welcomeRepoGrid___-UsKC .styles__welcomeCard___24QAz a div {
+          width: 400px;
+          height: 100px;
+          margin-left: 120px;
+          position: relative;
+          top: -50px;
+        }
+.styles__welcomeRepoSection___aPOr0 .styles__welcomeRepoGrid___-UsKC .styles__welcomeCard___24QAz:hover {
+      -webkit-box-shadow: 0 1px 6px 0 #c0c0c0;
+              box-shadow: 0 1px 6px 0 #c0c0c0;
+}
+.styles__repoSection___2E4Nh {
+  margin: 0 auto;
+}
+.styles__repoSection___2E4Nh div {
+    text-align: center;
+  }
+.styles__repoSection___2E4Nh .styles__repoGrid___3VXPb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+.styles__repoSection___2E4Nh .styles__repoGrid___3VXPb .styles__repoCard___Xf2nS {
+      padding: 24px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background: #ffffff;
+      border-color: #ffffff;
+      border-radius: 4px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+.styles__repoSection___2E4Nh .styles__repoGrid___3VXPb .styles__repoCard___Xf2nS img {
+        width: 150px;
+        height: 200px;
+      }
+.styles__repoSection___2E4Nh .styles__repoGrid___3VXPb .styles__repoCard___Xf2nS header {
+        font-size: 18px;
+        line-height: 24px;
+        height: 72px;
+        font-weight: 600;
+        margin: 32px auto;
+      }
+.styles__repoSection___2E4Nh .styles__repoGrid___3VXPb .styles__repoCard___Xf2nS:hover {
+      -webkit-box-shadow: 0 1px 6px 0 #c0c0c0;
+              box-shadow: 0 1px 6px 0 #c0c0c0;
+}
+.styles__repoSection___2E4Nh .styles__repoGrid___3VXPb .styles__repoCard___Xf2nS.styles__smallHeader___2-OCU header {
+          height: 25px;
+}
+.styles__repoSection___2E4Nh .styles__cta___3NoUc button {
+      line-height: 45px;
+      padding: 0 32px;
+    }
+.styles__cardSubtext___1dsag {
+  height: 60px;
+}
+.styles__welcome___1N4ZQ {
+  background: #ffffff;
+}
+.styles__welcome___1N4ZQ .styles__repoSection___2E4Nh {
+    max-width: 700px;
+  }
+@media only screen and (min-width: 601px) {
+  .styles__welcome___1N4ZQ .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS {
+        padding: 32px !important;
+        width: calc(49.95% - 24px);
+  }
+        .styles__welcome___1N4ZQ .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS header {
+          min-height: 24px;
+        }
+  .styles__welcome___1N4ZQ .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS:nth-child(1n) {
+        float: left;
+        margin-right: 48px;
+        clear: none;
+  }
+        .styles__welcome___1N4ZQ .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS:nth-child(1n) header {
+        }
+  .styles__welcome___1N4ZQ .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS:last-child {
+        margin-right: 0;
+  }
+        .styles__welcome___1N4ZQ .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS:last-child header {
+        }
+  .styles__welcome___1N4ZQ .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS:nth-child(2n) {
+        margin-right: 0;
+        float: right;
+  }
+        .styles__welcome___1N4ZQ .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS:nth-child(2n) header {
+        }
+  .styles__welcome___1N4ZQ .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS:nth-child(2n + 1) {
+        clear: both;
+  }
+        .styles__welcome___1N4ZQ .styles__repoSection___2E4Nh .styles__repoCard___Xf2nS:nth-child(2n + 1) header {
+        }
+}
+.styles__signupSection___i-8dB {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.styles__signupSection___i-8dB .styles__cta___3NoUc button {
+      line-height: 45px;
+      padding: 0 40px;
+    }
+.styles__divider___3JC3A {
+  margin: 60px auto;
+}
+.styles__landingPageCTA___2K_mM {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.styles__landingPageCTA___2K_mM .styles__signupForm___2jOIJ {
+    z-index: 99;
+    width: 470px;
+    min-height: 540px;
+    margin-top: 158px;
+    position: relative;
+    left: 3px;
+  }
+@media only screen and (max-width: 960px) {
+  .styles__landingPageCTA___2K_mM {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+    .styles__landingPageCTA___2K_mM .styles__signupForm___2jOIJ {
+      margin-top: 40px;
+      max-width: 470px;
+      min-height: 500px;
+      padding: 0 30px;
+    }
+  .styles__topSection___Hm7vt {
+    background-position: center;
+    min-height: 1100px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .styles__cta___3NoUc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+    .styles__cta___3NoUc a {
+      margin-bottom: 16px;
+    }
+  .styles__topSection___Hm7vt {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .styles__middleSection___7WYQl {
+    margin-top: 0;
+    margin-bottom: 28px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+    .styles__middleSection___7WYQl .styles__headline___3KoOn {
+      text-align: left;
+    }
+    .styles__middleSection___7WYQl .styles__description___3u4Lq {
+      text-align: left;
+    }
+  .styles__bottomSection___3iUl7 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .styles__repoGrid___3VXPb {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+    .styles__repoGrid___3VXPb .styles__repoCard___Xf2nS {
+      margin-bottom: 16px;
+    }
+}
+@media (max-width: 1200px) {
+  .styles__welcomeRepoSection___aPOr0 {
+    width: 100%;
+  }
+    .styles__welcomeRepoSection___aPOr0 .styles__welcomeRepoGrid___-UsKC {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      text-align: center;
+    }
+      .styles__welcomeRepoSection___aPOr0 .styles__welcomeRepoGrid___-UsKC .styles__welcomeCard___24QAz {
+        width: 49.5%;
+        min-height: 250px;
+      }
+        .styles__welcomeRepoSection___aPOr0 .styles__welcomeRepoGrid___-UsKC .styles__welcomeCard___24QAz a {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+        }
+          .styles__welcomeRepoSection___aPOr0 .styles__welcomeRepoGrid___-UsKC .styles__welcomeCard___24QAz a img {
+            width: 68px;
+            height: 103px;
+          }
+          .styles__welcomeRepoSection___aPOr0 .styles__welcomeRepoGrid___-UsKC .styles__welcomeCard___24QAz a header {
+            font-size: 18px;
+            font-weight: 600;
+            width: 700px;
+            height: 100px;
+            margin-left: 0;
+          }
+          .styles__welcomeRepoSection___aPOr0 .styles__welcomeRepoGrid___-UsKC .styles__welcomeCard___24QAz a div {
+            width: 700px;
+            height: 100px;
+            margin-left: 0;
+          }
+}
+@media only screen and (min-width: 1201px) {
+  .styles__topSection___Hm7vt {
+    padding-left: 12px;
+    padding-right: 12px;
+    background-position: top;
+  }
+}
+.styles__magicCarpet___Y72GF {
+  background-color: #29343a;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+  padding: 32px;
+  overflow-y: auto;
+}
+
+/* media queries */
+/* lib/constants/sizes */
+/* layout */
+/* spacing */
+/* misc */
+/* body font sizes */
+/* heading font sizes */
+/* font family */
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+/* Purples - lightest to darkest */
+/* Blues - lightest to darkest */
+/* Greens - lightest to darkest */
+/* Reds - lightest to darkest */
+/* Yellows - lightest to darkest */
+/* Grays - lightest to darkest */
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+/* -base background colors */
+/* lib/constants/variants */
+/* CTA component colors */
+/* cohesion font colors */
+/* State Colors */
+/* -- These use colors not found in the styleguide -- */
+/* - end -- */
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+/* button */
+/* select */
+/* input */
+/* stylelint-disable value-list-comma-newline-after */
+/* box-shadow for store cards */
+/* component: tab */
+/* Nautilus colors */
+/* Publish flow */
+/* Public Profile */
+/* v2 */
+/* Sign up form width */
+/* https://goo.gl/Mus6xj */
+/* Font sizes */
+/* columns */
+/* Three equal columns */
+/* Rows */
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+@-webkit-keyframes styles__fadein___1YgVv {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes styles__fadein___1YgVv {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+.styles__contentPane___2V4Fr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 64px;
+}
+.styles__contentPane___2V4Fr button {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+.styles__content___yJknb {
+  width: 50%
+}
+.styles__content___yJknb:not(:last-child) {
+  padding-right: 16px;
+}
+.styles__tabletImg___zVD6s {
+  margin-left: 64px;
+  max-width: 560px;
+}
+.styles__headline___19RcI {
+  font-size: 16px;
+  font-weight: 600;
+  color: #8f9ea8;
+  text-transform: uppercase;
+}
+.styles__headlineRule___PTMFG {
+  width: 60px;
+  height: 2px;
+  background-color: #099cec;
+}
+.styles__title___1-giv {
+  font-size: 38px;
+  font-weight: 300;
+  text-align: left;
+  color: #445d6e;
+  padding-bottom: 16px;
+  margin: 0;
+}
+.styles__description___3QAYc {
+  font-size: 16px;
+  color: #8f9ea8;
+  padding-bottom: 16px;
+}
+.styles__cta___12yd6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.styles__hoverPointer___wCDik {
+  cursor: pointer;
+}
+
+/* media queries */
+/* lib/constants/sizes */
+/* layout */
+/* spacing */
+/* misc */
+/* body font sizes */
+/* heading font sizes */
+/* font family */
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+/* Purples - lightest to darkest */
+/* Blues - lightest to darkest */
+/* Greens - lightest to darkest */
+/* Reds - lightest to darkest */
+/* Yellows - lightest to darkest */
+/* Grays - lightest to darkest */
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+/* -base background colors */
+/* lib/constants/variants */
+/* CTA component colors */
+/* cohesion font colors */
+/* State Colors */
+/* -- These use colors not found in the styleguide -- */
+/* - end -- */
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+/* button */
+/* select */
+/* input */
+/* stylelint-disable value-list-comma-newline-after */
+/* box-shadow for store cards */
+/* component: tab */
+/* Nautilus colors */
+/* Publish flow */
+/* Public Profile */
+/* v2 */
+/* Sign up form width */
+/* https://goo.gl/Mus6xj */
+/* Font sizes */
+/* columns */
+/* Three equal columns */
+/* Rows */
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+@-webkit-keyframes styles__fadein___18F3- {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes styles__fadein___18F3- {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+.styles__orgRow___78N8i {
+  margin-bottom: 16px;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+}
+.styles__orgRow___78N8i img {
+    margin-right: 8px;
+  }
+.styles__orgRow___78N8i span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+.styles__orgRow___78N8i .styles__fullName___1QOlK {
+    font-size: 12px;
+    line-height: 16px;
+    color: #27343b;
+    color: #70787d;
+  }
+
+/* media queries */
+/* lib/constants/sizes */
+/* layout */
+/* spacing */
+/* misc */
+/* body font sizes */
+/* heading font sizes */
+/* font family */
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+/* Purples - lightest to darkest */
+/* Blues - lightest to darkest */
+/* Greens - lightest to darkest */
+/* Reds - lightest to darkest */
+/* Yellows - lightest to darkest */
+/* Grays - lightest to darkest */
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+/* -base background colors */
+/* lib/constants/variants */
+/* CTA component colors */
+/* cohesion font colors */
+/* State Colors */
+/* -- These use colors not found in the styleguide -- */
+/* - end -- */
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+/* button */
+/* select */
+/* input */
+/* stylelint-disable value-list-comma-newline-after */
+/* box-shadow for store cards */
+/* component: tab */
+/* Nautilus colors */
+/* Publish flow */
+/* Public Profile */
+/* v2 */
+/* Sign up form width */
+/* https://goo.gl/Mus6xj */
+/* Font sizes */
+/* columns */
+/* Three equal columns */
+/* Rows */
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+@-webkit-keyframes styles__fadein___L3WFh {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes styles__fadein___L3WFh {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+.styles__title___1iulA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.styles__title___1iulA button {
+    padding: 0;
+    margin: 0;
+    min-width: 32px;
+    border-radius: 4px;
+    min-height: 22px;
+    line-height: 22px;
+  }
+.styles__title___1iulA button a {
+      text-decoration: none;
+    }
+.styles__teamLink___3DyRk {
+  display: block;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 16px;
+}
+.styles__teamLink___3DyRk .styles__orgName___3ffa5 {
+    color: #70787d;
+  }
+.styles__allOrgsLink___1GX53 {
+  font-size: 12px;
+  line-height: 16px;
+  color: #27343b;
+  padding-left: 36px;
+  color: #099cec;
+  text-decoration: none;
+}
+.styles__loading___17nqP {
+  margin: 0 auto;
+  padding-top: 32px;
+}
+.styles__marketingCTAs___3umCa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.styles__exploreLogo___2w1y_ {
+  cursor: pointer;
+  width: 250px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  -webkit-box-shadow: inset -1px 0 0 0 rgba(224, 227, 231, .6),
+  inset 0 -1px 0 0 #e0e4e7, inset 1px 0 0 0 rgba(224, 227, 231, .6);
+          box-shadow: inset -1px 0 0 0 rgba(224, 227, 231, .6),
+  inset 0 -1px 0 0 #e0e4e7, inset 1px 0 0 0 rgba(224, 227, 231, .6)
+}
+.styles__exploreLogo___2w1y_:hover {
+  -webkit-box-shadow: 0 1px 6px 0 #c0c0c0;
+          box-shadow: 0 1px 6px 0 #c0c0c0;
+}
+@media (max-width: 960px) {
+  .styles__marketingCTAs___3umCa {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row wrap;
+            flex-direction: row wrap;
+    margin: 10px;
+  }
+
+  .styles__exploreLogo___2w1y_ {
+    max-width: 250px;
+    min-height: 100px;
+    background-size: fit;
+  }
+}
+.styles__orgCard___1INyy {
+  text-align: center;
+}
+.styles__orgCard___1INyy a {
+    text-decoration: none;
+  }
+.styles__orgCard___1INyy img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 16px;
+  }
+.styles__orgCard___1INyy header {
+    font-size: 14px;
+    line-height: 20px;
+    color: #27343b;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+/* media queries */
+/* lib/constants/sizes */
+/* layout */
+/* spacing */
+/* misc */
+/* body font sizes */
+/* heading font sizes */
+/* font family */
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+/* Purples - lightest to darkest */
+/* Blues - lightest to darkest */
+/* Greens - lightest to darkest */
+/* Reds - lightest to darkest */
+/* Yellows - lightest to darkest */
+/* Grays - lightest to darkest */
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+/* -base background colors */
+/* lib/constants/variants */
+/* CTA component colors */
+/* cohesion font colors */
+/* State Colors */
+/* -- These use colors not found in the styleguide -- */
+/* - end -- */
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+/* button */
+/* select */
+/* input */
+/* stylelint-disable value-list-comma-newline-after */
+/* box-shadow for store cards */
+/* component: tab */
+/* Nautilus colors */
+/* Publish flow */
+/* Public Profile */
+/* v2 */
+/* Sign up form width */
+/* https://goo.gl/Mus6xj */
+/* Font sizes */
+/* columns */
+/* Three equal columns */
+/* Rows */
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+@-webkit-keyframes styles__fadein___1a3dV {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes styles__fadein___1a3dV {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+.styles__content___YiDcu {
+  display: flex;
+  flex-flow: row wrap
+}
+.styles__content___YiDcu > * {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 99.9%;
+  max-width: 99.9%;
+  width: 99.9%;
+}
+.styles__content___YiDcu > *:nth-child(1n) {
+  margin-right: 0;
+  margin-left: 0;
+}
+.styles__content___YiDcu > *:last-child {
+  margin-right: 0;
+}
+.styles__content___YiDcu > *:nth-child(1n) {
+  margin-right: 0;
+  margin-left: auto;
+}
+@media (min-width: 960px) {
+  .styles__content___YiDcu > *:nth-child(1) {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(74.925% - 12px);
+    max-width: calc(74.925% - 12px);
+    width: calc(74.925% - 12px);
+  }
+  .styles__content___YiDcu > *:nth-child(1):nth-child(1n) {
+    margin-right: 48px;
+    margin-left: 0;
+  }
+  .styles__content___YiDcu > *:nth-child(1):last-child {
+    margin-right: 0;
+  }
+  .styles__content___YiDcu > *:nth-child(1):nth-child(2n) {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .styles__content___YiDcu > *:nth-child(2) {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(24.975% - 36px);
+    max-width: calc(24.975% - 36px);
+    width: calc(24.975% - 36px);
+  }
+  .styles__content___YiDcu > *:nth-child(2):nth-child(1n) {
+    margin-right: 48px;
+    margin-left: 0;
+  }
+  .styles__content___YiDcu > *:nth-child(2):last-child {
+    margin-right: 0;
+  }
+  .styles__content___YiDcu > *:nth-child(2):nth-child(2n) {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+.styles__cta___3_5dF {
+  margin: 0;
+}
+.styles__cta___3_5dF a {
+    text-decoration: none;
+  }
+
+/* media queries */
+/* lib/constants/sizes */
+/* layout */
+/* spacing */
+/* misc */
+/* body font sizes */
+/* heading font sizes */
+/* font family */
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+/* Purples - lightest to darkest */
+/* Blues - lightest to darkest */
+/* Greens - lightest to darkest */
+/* Reds - lightest to darkest */
+/* Yellows - lightest to darkest */
+/* Grays - lightest to darkest */
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+/* -base background colors */
+/* lib/constants/variants */
+/* CTA component colors */
+/* cohesion font colors */
+/* State Colors */
+/* -- These use colors not found in the styleguide -- */
+/* - end -- */
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+/* button */
+/* select */
+/* input */
+/* stylelint-disable value-list-comma-newline-after */
+/* box-shadow for store cards */
+/* component: tab */
+/* Nautilus colors */
+/* Publish flow */
+/* Public Profile */
+/* v2 */
+/* Sign up form width */
+/* https://goo.gl/Mus6xj */
+/* Font sizes */
+/* columns */
+/* Three equal columns */
+/* Rows */
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+@-webkit-keyframes styles__fadein___1kz6J {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes styles__fadein___1kz6J {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+.styles__homeLandingPage___2ZaL_ {
+  top: -64px;
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  margin-bottom: -64px;
+}
+.styles__home___y_Nj1 {
+  padding-top: 32px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.styles__homeWelcome___znAUb {
+  padding-top: 0;
+}
+@media only screen and (max-width: 600px) {
+  .styles__home___y_Nj1 {
+    padding: 12px;
+  }
+  .styles__homeLandingPage___2ZaL_ {
+    top: -100px;
+  }
+}
+

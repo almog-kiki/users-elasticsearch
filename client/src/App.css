@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+}
+
+body{
+  background-color: #f3f3f3 !important;
+}
+.btn{
+  border-radius: 0 !important;
+}
+input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* <div class="section gradient-1" > </div> */
+.gradient-1{
+  background: linear-gradient(to top right,#2490d9,#00d685);
+  background: url(./assets/bg.png),linear-gradient(to top right,#2490d9,#00d685);
+  background-repeat: repeat;
+}
+
+.nav-tabs .nav-item {
+  cursor: pointer;
+  width: 140px;
+  margin-bottom:0px !important
+}
+.nav-tabs {
+  background-color: #4267CF;
+  border-bottom: none !important;
+  color: white;
+  display: flex !important;
+  justify-content: center;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: #ffffff !important;
+  background-color: #6089ff !important;
+  border-color: #dee2e6 #dee2e6 #fff;
+  outline: none !important;
+}
+.nav-tabs .nav-link {
+  border: none !important; 
+  border-top-left-radius: 0 !important;
+   border-top-right-radius: 0 !important;
+}
+
+.zero-row-margin{
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.content-container{ 
+  padding: 2em;
+}
+.section-container{
+  margin-top: 2em;
+}
+
+.table-container{
+  margin-top: 2.5em;
+}
+.search-container{
+  margin: 2em auto;
+  width: 40%;
+  min-width: 300px;
+  max-width: 535px;
+}
+.search-title{
+  line-height: 2.5em;
+  font-size: 39px;
+}
+.search-form{
+  width: 50%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.add-btn{
+  height: 38px;
+}
+
+.search-result{
+  min-height: 3em;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+
+.users-container{
+  margin: 2em auto;
+  width: 40%;
+  min-width: 300px;
+}
+
+.user-cell{
+  border: 2px solid gray;
+  padding: 10px;
+}
+
+.table-th-click{
+  cursor: pointer;
+}
+.arrow{
+  margin-left: 10px;
+}

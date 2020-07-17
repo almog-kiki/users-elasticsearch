@@ -1,0 +1,1035 @@
+/* ImageHeader styles */
+
+/* media queries */
+
+/* lib/constants/sizes */
+
+/* layout */
+
+/* spacing */
+
+/* misc */
+
+/* body font sizes */
+
+/* heading font sizes */
+
+/* font family */
+
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+
+/* Purples - lightest to darkest */
+
+/* Blues - lightest to darkest */
+
+/* Greens - lightest to darkest */
+
+/* Reds - lightest to darkest */
+
+/* Yellows - lightest to darkest */
+
+/* Grays - lightest to darkest */
+
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+
+/* -base background colors */
+
+/* lib/constants/variants */
+
+/* CTA component colors */
+
+/* cohesion font colors */
+
+/* State Colors */
+
+/* -- These use colors not found in the styleguide -- */
+
+/* - end -- */
+
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+
+/* button */
+
+/* select */
+
+/* input */
+
+/* stylelint-disable value-list-comma-newline-after */
+
+/* box-shadow for store cards */
+
+/* component: tab */
+
+/* Nautilus colors */
+
+/* Publish flow */
+
+/* Public Profile */
+
+/* v2 */
+
+/* Sign up form width */
+
+/* https://goo.gl/Mus6xj */
+
+/* Font sizes */
+
+/* columns */
+
+/* Three equal columns */
+
+/* Rows */
+
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+
+@-webkit-keyframes styles__fadein___2pQfO {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes styles__fadein___2pQfO {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+
+/* Shared repotags component variables/mixins */
+
+/**
+ * NOTE: The 'components/common/Checkbox' component comes from MaterialUI. At some
+ *  deeply-nested layer, Mui adds a right margin of 24px. The only way I've found
+ *  to cut this out, so that the hit area for the checkbox actually maps to the
+ *  visible area of the checkbox is by wrapping the checkbox in a div and setting
+ *  its overflow to be hidden, and its size to be the visible size of the checkbox.
+ */
+
+/* space between ActionBar and TagList */
+
+/**
+ * TAG LIST
+ */
+
+/* horizontal (left/right) padding on content part of TagListItem */
+
+/* vertical space between each TagListItem */
+
+/* x-offset, y-offset, and blur radius for shadow on TagListItem hover */
+
+/**
+ * NOTE: These variables establish a flexbox-based grid system used through the
+ *  tag list and into the image list within it. Seemed easier than also using
+ *  CSS grid (i.e. grid to layout the TagItem, and flexbox to layout the ImageHeader
+ *  and ImageListItem).
+ */
+
+/* checkbox */
+
+/* image digest */
+
+/* image architecture */
+
+/* image OS */
+
+/* size */
+
+/* critical count */
+
+/* major count */
+
+/* minor count */
+
+/**
+ * IMAGE LIST
+ */
+
+/*
+gutter between two columns where first column is right-aligned and second
+ column is left-aligned
+*/
+
+/* vertical, between items */
+
+/* min width for official images */
+
+/* stylelint-disable function-calc-no-unspaced-operator, indentation */
+
+/* stylelint-enable function-calc-no-unspaced-operator, indentation */
+
+/* min width when vulnerabilities not shown (i.e. community images) */
+
+.styles__row___1ZBWY {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 1px 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #8f9ea8;
+  padding-top: 13px;
+}
+
+.styles__digestItem___Afw1S {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 2px;
+  margin: 0;
+  padding-left: 0;
+  /* for left alignment with 'info' block in tag item */
+  width: 100px;
+  -webkit-box-flex: 1.25;
+      -ms-flex-positive: 1.25;
+          flex-grow: 1.25;
+  text-transform: uppercase;
+}
+
+.styles__osArchItem___299hZ {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 2px;
+  margin: 0;
+  width: 80px;
+  -webkit-box-flex: 1.19;
+      -ms-flex-positive: 1.19;
+          flex-grow: 1.19;
+  /* To adjust for Tooltip on Compressed Size header element */
+  margin-left: 38px;
+  text-transform: uppercase;
+}
+
+.styles__osItem___3bJMn {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 2px;
+  margin: 0;
+  width: 80px;
+  -webkit-box-flex: 1.25;
+      -ms-flex-positive: 1.25;
+          flex-grow: 1.25;
+  margin-left: 38px;
+  text-transform: uppercase;
+}
+
+.styles__sizeItem___2Eidb {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 2px;
+  margin: 0;
+  width: 80px;
+  -webkit-box-flex: 1.25;
+      -ms-flex-positive: 1.25;
+          flex-grow: 1.25;
+  text-transform: uppercase;
+}
+
+.styles__sizeNoVulns___2y0lQ {
+  text-align: right;
+}
+
+.styles__criticalItem___2Bxjs {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 2px;
+  margin: 0;
+  width: 55px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.styles__majorItem___3ljFV {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 2px;
+  margin: 0;
+  width: 55px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.styles__minorItem___2EB7H {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 2px;
+  margin: 0;
+  width: 55px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+/* ImageListItem styles */
+
+/* media queries */
+
+/* lib/constants/sizes */
+
+/* layout */
+
+/* spacing */
+
+/* misc */
+
+/* body font sizes */
+
+/* heading font sizes */
+
+/* font family */
+
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+
+/* Purples - lightest to darkest */
+
+/* Blues - lightest to darkest */
+
+/* Greens - lightest to darkest */
+
+/* Reds - lightest to darkest */
+
+/* Yellows - lightest to darkest */
+
+/* Grays - lightest to darkest */
+
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+
+/* -base background colors */
+
+/* lib/constants/variants */
+
+/* CTA component colors */
+
+/* cohesion font colors */
+
+/* State Colors */
+
+/* -- These use colors not found in the styleguide -- */
+
+/* - end -- */
+
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+
+/* button */
+
+/* select */
+
+/* input */
+
+/* stylelint-disable value-list-comma-newline-after */
+
+/* box-shadow for store cards */
+
+/* component: tab */
+
+/* Nautilus colors */
+
+/* Publish flow */
+
+/* Public Profile */
+
+/* v2 */
+
+/* Sign up form width */
+
+/* https://goo.gl/Mus6xj */
+
+/* Font sizes */
+
+/* columns */
+
+/* Three equal columns */
+
+/* Rows */
+
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+
+@-webkit-keyframes styles__fadein___1RmZx {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes styles__fadein___1RmZx {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+
+/* Shared repotags component variables/mixins */
+
+/**
+ * NOTE: The 'components/common/Checkbox' component comes from MaterialUI. At some
+ *  deeply-nested layer, Mui adds a right margin of 24px. The only way I've found
+ *  to cut this out, so that the hit area for the checkbox actually maps to the
+ *  visible area of the checkbox is by wrapping the checkbox in a div and setting
+ *  its overflow to be hidden, and its size to be the visible size of the checkbox.
+ */
+
+/* space between ActionBar and TagList */
+
+/**
+ * TAG LIST
+ */
+
+/* horizontal (left/right) padding on content part of TagListItem */
+
+/* vertical space between each TagListItem */
+
+/* x-offset, y-offset, and blur radius for shadow on TagListItem hover */
+
+/**
+ * NOTE: These variables establish a flexbox-based grid system used through the
+ *  tag list and into the image list within it. Seemed easier than also using
+ *  CSS grid (i.e. grid to layout the TagItem, and flexbox to layout the ImageHeader
+ *  and ImageListItem).
+ */
+
+/* checkbox */
+
+/* image digest */
+
+/* image architecture */
+
+/* image OS */
+
+/* size */
+
+/* critical count */
+
+/* major count */
+
+/* minor count */
+
+/**
+ * IMAGE LIST
+ */
+
+/*
+gutter between two columns where first column is right-aligned and second
+ column is left-aligned
+*/
+
+/* vertical, between items */
+
+/* min width for official images */
+
+/* stylelint-disable function-calc-no-unspaced-operator, indentation */
+
+/* stylelint-enable function-calc-no-unspaced-operator, indentation */
+
+/* min width when vulnerabilities not shown (i.e. community images) */
+
+.styles__row___1i_Jk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 1px 0;
+  padding: 0;
+}
+
+/*
+WARNING: Whatever style gets defined here (i.e. as the second style in this
+ file) gets completely ignored by PostCSS for some unknown reason!? So this
+ unused style must be here, otherwise the next thing gets ignored... Maybe it's
+ something with the 'repotags-imagelist-row' mixin? But then there would be
+ a similar issue in ../ImageHeader/styles.css, but there isn't...
+*/
+
+.styles__foo___2hZSg {
+  width: 0;
+}
+
+.styles__row___1i_Jk:last-child {
+  margin-bottom: 0;
+}
+
+.styles__clickable___FBojG:hover {
+  background-color: #f2f8ff;
+  cursor: pointer;
+}
+
+.styles__digestItem___28pBb {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 2px;
+  margin: 0;
+  padding-left: 0;
+  /* for left alignment with 'info' block in tag item */
+  width: 100px;
+  -webkit-box-flex: 1.25;
+      -ms-flex-positive: 1.25;
+          flex-grow: 1.25;
+}
+
+.styles__clickable___FBojG > .styles__digestItem___28pBb {
+  color: #007bff;
+}
+
+.styles__osArchItem___3i494 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 2px;
+  margin: 0;
+  width: 80px;
+  -webkit-box-flex: 1.25;
+      -ms-flex-positive: 1.25;
+          flex-grow: 1.25;
+  margin-left: 38px;
+}
+
+.styles__sizeItem___2meSu {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 2px;
+  margin: 0;
+  width: 80px;
+  -webkit-box-flex: 1.25;
+      -ms-flex-positive: 1.25;
+          flex-grow: 1.25;
+}
+
+.styles__sizeNoVulns___3f8rM {
+  text-align: right;
+}
+
+.styles__criticalItem___ljjye {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 2px;
+  margin: 0;
+  width: 55px;
+  text-align: right;
+}
+
+.styles__hasCritical___IvkN8 {
+  color: #e12b0c;
+}
+
+.styles__majorItem___2NZC8 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 2px;
+  margin: 0;
+  width: 55px;
+  text-align: right;
+}
+
+.styles__minorItem___ffT7- {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 2px;
+  margin: 0;
+  width: 55px;
+  text-align: right;
+}
+
+/* ImageListToggle styles */
+
+/* media queries */
+
+/* lib/constants/sizes */
+
+/* layout */
+
+/* spacing */
+
+/* misc */
+
+/* body font sizes */
+
+/* heading font sizes */
+
+/* font family */
+
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+
+/* Purples - lightest to darkest */
+
+/* Blues - lightest to darkest */
+
+/* Greens - lightest to darkest */
+
+/* Reds - lightest to darkest */
+
+/* Yellows - lightest to darkest */
+
+/* Grays - lightest to darkest */
+
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+
+/* -base background colors */
+
+/* lib/constants/variants */
+
+/* CTA component colors */
+
+/* cohesion font colors */
+
+/* State Colors */
+
+/* -- These use colors not found in the styleguide -- */
+
+/* - end -- */
+
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+
+/* button */
+
+/* select */
+
+/* input */
+
+/* stylelint-disable value-list-comma-newline-after */
+
+/* box-shadow for store cards */
+
+/* component: tab */
+
+/* Nautilus colors */
+
+/* Publish flow */
+
+/* Public Profile */
+
+/* v2 */
+
+/* Sign up form width */
+
+/* https://goo.gl/Mus6xj */
+
+/* Font sizes */
+
+/* columns */
+
+/* Three equal columns */
+
+/* Rows */
+
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+
+@-webkit-keyframes styles__fadein___3o9n6 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes styles__fadein___3o9n6 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+
+/* Shared repotags component variables/mixins */
+
+/**
+ * NOTE: The 'components/common/Checkbox' component comes from MaterialUI. At some
+ *  deeply-nested layer, Mui adds a right margin of 24px. The only way I've found
+ *  to cut this out, so that the hit area for the checkbox actually maps to the
+ *  visible area of the checkbox is by wrapping the checkbox in a div and setting
+ *  its overflow to be hidden, and its size to be the visible size of the checkbox.
+ */
+
+/* space between ActionBar and TagList */
+
+/**
+ * TAG LIST
+ */
+
+/* horizontal (left/right) padding on content part of TagListItem */
+
+/* vertical space between each TagListItem */
+
+/* x-offset, y-offset, and blur radius for shadow on TagListItem hover */
+
+/**
+ * NOTE: These variables establish a flexbox-based grid system used through the
+ *  tag list and into the image list within it. Seemed easier than also using
+ *  CSS grid (i.e. grid to layout the TagItem, and flexbox to layout the ImageHeader
+ *  and ImageListItem).
+ */
+
+/* checkbox */
+
+/* image digest */
+
+/* image architecture */
+
+/* image OS */
+
+/* size */
+
+/* critical count */
+
+/* major count */
+
+/* minor count */
+
+/**
+ * IMAGE LIST
+ */
+
+/*
+gutter between two columns where first column is right-aligned and second
+ column is left-aligned
+*/
+
+/* vertical, between items */
+
+/* min width for official images */
+
+/* stylelint-disable function-calc-no-unspaced-operator, indentation */
+
+/* stylelint-enable function-calc-no-unspaced-operator, indentation */
+
+/* min width when vulnerabilities not shown (i.e. community images) */
+
+.styles__container___1BbKS {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 4px;
+}
+
+.styles__label___3bSdU {
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* ImageList styles */
+
+/* media queries */
+
+/* lib/constants/sizes */
+
+/* layout */
+
+/* spacing */
+
+/* misc */
+
+/* body font sizes */
+
+/* heading font sizes */
+
+/* font family */
+
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+
+/* Purples - lightest to darkest */
+
+/* Blues - lightest to darkest */
+
+/* Greens - lightest to darkest */
+
+/* Reds - lightest to darkest */
+
+/* Yellows - lightest to darkest */
+
+/* Grays - lightest to darkest */
+
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+
+/* -base background colors */
+
+/* lib/constants/variants */
+
+/* CTA component colors */
+
+/* cohesion font colors */
+
+/* State Colors */
+
+/* -- These use colors not found in the styleguide -- */
+
+/* - end -- */
+
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+
+/* button */
+
+/* select */
+
+/* input */
+
+/* stylelint-disable value-list-comma-newline-after */
+
+/* box-shadow for store cards */
+
+/* component: tab */
+
+/* Nautilus colors */
+
+/* Publish flow */
+
+/* Public Profile */
+
+/* v2 */
+
+/* Sign up form width */
+
+/* https://goo.gl/Mus6xj */
+
+/* Font sizes */
+
+/* columns */
+
+/* Three equal columns */
+
+/* Rows */
+
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+
+@-webkit-keyframes styles__fadein___2Srj- {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes styles__fadein___2Srj- {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+
+/* Shared repotags component variables/mixins */
+
+/**
+ * NOTE: The 'components/common/Checkbox' component comes from MaterialUI. At some
+ *  deeply-nested layer, Mui adds a right margin of 24px. The only way I've found
+ *  to cut this out, so that the hit area for the checkbox actually maps to the
+ *  visible area of the checkbox is by wrapping the checkbox in a div and setting
+ *  its overflow to be hidden, and its size to be the visible size of the checkbox.
+ */
+
+/* space between ActionBar and TagList */
+
+/**
+ * TAG LIST
+ */
+
+/* horizontal (left/right) padding on content part of TagListItem */
+
+/* vertical space between each TagListItem */
+
+/* x-offset, y-offset, and blur radius for shadow on TagListItem hover */
+
+/**
+ * NOTE: These variables establish a flexbox-based grid system used through the
+ *  tag list and into the image list within it. Seemed easier than also using
+ *  CSS grid (i.e. grid to layout the TagItem, and flexbox to layout the ImageHeader
+ *  and ImageListItem).
+ */
+
+/* checkbox */
+
+/* image digest */
+
+/* image architecture */
+
+/* image OS */
+
+/* size */
+
+/* critical count */
+
+/* major count */
+
+/* minor count */
+
+/**
+ * IMAGE LIST
+ */
+
+/*
+gutter between two columns where first column is right-aligned and second
+ column is left-aligned
+*/
+
+/* vertical, between items */
+
+/* min width for official images */
+
+/* stylelint-disable function-calc-no-unspaced-operator, indentation */
+
+/* stylelint-enable function-calc-no-unspaced-operator, indentation */
+
+/* min width when vulnerabilities not shown (i.e. community images) */
+
+.styles__list___3WICb {
+  margin-left: 0;
+}
+

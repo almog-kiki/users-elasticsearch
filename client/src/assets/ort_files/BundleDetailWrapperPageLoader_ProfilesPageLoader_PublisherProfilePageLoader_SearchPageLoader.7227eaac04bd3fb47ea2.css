@@ -1,0 +1,205 @@
+/* media queries */
+/* lib/constants/sizes */
+/* layout */
+/* spacing */
+/* misc */
+/* body font sizes */
+/* heading font sizes */
+/* font family */
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+/* Purples - lightest to darkest */
+/* Blues - lightest to darkest */
+/* Greens - lightest to darkest */
+/* Reds - lightest to darkest */
+/* Yellows - lightest to darkest */
+/* Grays - lightest to darkest */
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+/* -base background colors */
+/* lib/constants/variants */
+/* CTA component colors */
+/* cohesion font colors */
+/* State Colors */
+/* -- These use colors not found in the styleguide -- */
+/* - end -- */
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+/* button */
+/* select */
+/* input */
+/* stylelint-disable value-list-comma-newline-after */
+/* box-shadow for store cards */
+/* component: tab */
+/* Nautilus colors */
+/* Publish flow */
+/* Public Profile */
+/* v2 */
+/* Sign up form width */
+/* https://goo.gl/Mus6xj */
+/* Font sizes */
+/* columns */
+/* Three equal columns */
+/* Rows */
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+@-webkit-keyframes styles__fadein___1uFK5 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes styles__fadein___1uFK5 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+/* hide the ALT text in certain browsers (firefox) */
+.styles__hideAltText___IyemE {
+  color: transparent;
+}
+/*
+ * Make sure there is no flash between when the image calls onLoad() and the
+ * loaded styles are applied
+ */
+.styles__hideFadeInFlash___29bQM {
+  opacity: 0;
+}
+.styles__fadeInImage___dfisB {
+  -webkit-animation: styles__fadein___1uFK5 0.6s;
+          animation: styles__fadein___1uFK5 0.6s;
+}
+@keyframes styles__fadein___1uFK5 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* media queries */
+/* lib/constants/sizes */
+/* layout */
+/* spacing */
+/* misc */
+/* body font sizes */
+/* heading font sizes */
+/* font family */
+/* -----------------------------------------------------------------------------
+ | Color Dictionary
+----------------------------------------------------------------------------- */
+/* Purples - lightest to darkest */
+/* Blues - lightest to darkest */
+/* Greens - lightest to darkest */
+/* Reds - lightest to darkest */
+/* Yellows - lightest to darkest */
+/* Grays - lightest to darkest */
+/* -----------------------------------------------------------------------------
+ | Color Purpose Vars
+----------------------------------------------------------------------------- */
+/* -base background colors */
+/* lib/constants/variants */
+/* CTA component colors */
+/* cohesion font colors */
+/* State Colors */
+/* -- These use colors not found in the styleguide -- */
+/* - end -- */
+/* Note: These are volumes states and not actual/valid object states.
+ Added here for completion
+*/
+/* button */
+/* select */
+/* input */
+/* stylelint-disable value-list-comma-newline-after */
+/* box-shadow for store cards */
+/* component: tab */
+/* Nautilus colors */
+/* Publish flow */
+/* Public Profile */
+/* v2 */
+/* Sign up form width */
+/* https://goo.gl/Mus6xj */
+/* Font sizes */
+/* columns */
+/* Three equal columns */
+/* Rows */
+/* TODO:  Use flex. Flexbox doesn't seem to work on iOS safari/chrome
+          when overriding a lost column for small devices (?)(Registration page)
+*/
+@-webkit-keyframes styles__fadein___1WPex {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes styles__fadein___1WPex {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* flex does not work inside firefox buttons, this is a workaround
+   http://stackoverflow.com/questions/24289251/flexbox-not-working-in-buttons-in-firefox */
+/* Causes text that overflows in an element to be truncated with an ellipsis. */
+/*
+ A little trick for vertically centering text content that doesn't wrap when
+ the element's height is known.
+*/
+.styles__chip___3ZtYi {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f1f4f6;
+  border-radius: 2px;
+  color: #81939f;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 6px 10px;
+}
+.styles__clickable___1fzXr {
+  cursor: pointer;
+  text-decoration: none
+}
+.styles__clickable___1fzXr:hover {
+  opacity: 0.7;
+}
+.styles__withIcon___2uxjQ {
+  background-color: #e0e4e7;
+  color: #445d6e;
+  font-size: 13px;
+  line-height: 13px;
+  padding: 10px 12px;
+}
+.styles__icon___3K8bU {
+  width: 13px;
+  height: 13px;
+}
+.styles__icon___3K8bU {
+  margin-right: 10px;
+  fill: #445d6e;
+}
+

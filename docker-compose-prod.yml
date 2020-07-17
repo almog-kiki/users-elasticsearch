@@ -1,0 +1,150 @@
+version: '3'
+services:
+  client:
+    stdin_open: true
+    tty: true
+    container_name: client
+    build: 
+      context: './client'
+      dockerfile: Dockerfile.prod
+      args:
+        - NODE_ENV=production
+    links:
+      - users
+      - search
+    depends_on:
+      - users
+      - search
+    volumes:
+      - './client:/app'
+      - '/app/node_modules'
+    ports:
+      - "3000:80"
+
+  search:
+    container_name: search
+    build: 
+      context: './search'
+      dockerfile: Dockerfile.prod
+    ports:
+      - "7001:5000"
+    depends_on: 
+      - mongodb-primary
+    environment:
+      - MONGO_DB_URI=mongodb://mongodb-primary:27017/DB_NAME?authSource=admin
+
+  users:
+    container_name: users
+    build:
+      context: './users'
+      dockerfile: Dockerfile.prod
+    volumes:
+      - './users:/app'
+    ports:
+      - "7002:5000"
+    depends_on: 
+      - mongodb-primary
+    environment:
+      - MONGO_DB_URI=mongodb://mongodb-primary:27017/DB_NAME?authSource=admin
+
+  # # https://hub.docker.com/r/bitnami/mongodb/
+  mongodb-primary:
+    container_name: mongodb-primary
+    image: 'bitnami/mongodb:latest'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MONGODB_ADVERTISED_HOSTNAME=mongodb-primary
+      - MONGODB_REPLICA_SET_MODE=primary
+      - MONGODB_ROOT_PASSWORD=password123
+      - MONGODB_REPLICA_SET_KEY=replicasetkey123
+    volumes:
+      - 'mongodb_master_data:/bitnami'
+
+  mongodb-secondary:
+    image: 'bitnami/mongodb:latest'
+    depends_on:
+      - mongodb-primary
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MONGODB_ADVERTISED_HOSTNAME=mongodb-secondary
+      - MONGODB_REPLICA_SET_MODE=secondary
+      - MONGODB_INITIAL_PRIMARY_HOST=mongodb-primary
+      - MONGODB_INITIAL_PRIMARY_PORT_NUMBER=27017
+      - MONGODB_INITIAL_PRIMARY_ROOT_PASSWORD=password123
+      - MONGODB_REPLICA_SET_KEY=replicasetkey123
+
+
+  mongodb-arbiter:
+    image: 'bitnami/mongodb:latest'
+    depends_on:
+      - mongodb-primary
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MONGODB_ADVERTISED_HOSTNAME=mongodb-arbiter
+      - MONGODB_REPLICA_SET_MODE=arbiter
+      - MONGODB_INITIAL_PRIMARY_HOST=mongodb-primary
+      - MONGODB_INITIAL_PRIMARY_PORT_NUMBER=27017
+      - MONGODB_INITIAL_PRIMARY_ROOT_PASSWORD=password123
+      - MONGODB_REPLICA_SET_KEY=replicasetkey123
+
+  es01:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
+    container_name: es01
+    environment:
+      - node.name=es01
+      - cluster.name=es-docker-cluster
+      - discovery.seed_hosts=es02,es03
+      - cluster.initial_master_nodes=es01,es02,es03
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - data01:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+
+  es02:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
+    container_name: es02
+    environment:
+      - node.name=es02
+      - cluster.name=es-docker-cluster
+      - discovery.seed_hosts=es01,es03
+      - cluster.initial_master_nodes=es01,es02,es03
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - data02:/usr/share/elasticsearch/data
+    ports:
+      - 9201:9200
+   
+  nginx:
+    container_name: nginx
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile.prod
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - client
+      - users
+      - search
+
+
+volumes:
+  data01:
+    driver: local
+  data02:
+    driver: local
+  mongodb_master_data:
+    driver: local
+
+
